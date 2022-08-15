@@ -7,10 +7,6 @@
 
 import UIKit
 
-protocol MovieListItemDelegate: AnyObject {
-    func selectedMovie(movie: Movie)
-}
-
 class MovieListView: UIView {
 
     weak var delegate: MovieListItemDelegate?

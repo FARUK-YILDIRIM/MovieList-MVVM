@@ -25,3 +25,7 @@ protocol MovieViewModelType: ViewModelType {
     var delegate: MovieViewModelDelegate? { get set }
     init(apiService: APIServiceProtocol)
 }
+
+protocol MovieListItemDelegate: AnyObject {
+    func selectedMovie(movie: Movie)
+}
